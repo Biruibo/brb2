@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 | 毕瑞波</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- 导航栏 -->
+<header class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+        <a href="../../index.html" class="text-xl md:text-2xl font-bold text-primary flex items-center gap-2">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>毕瑞波</span>
+        </a>
+        <nav class="hidden md:flex gap-8 text-base md:text-lg">
+            <a href="../../index.html" class="nav-link hover:text-primary transition-colors">首页</a>
+            <a href="about.html" class="nav-link hover:text-primary transition-colors">关于我</a>
+            <a href="skills.html" class="nav-link hover:text-primary transition-colors">专业技能</a>
+            <a href="projects.html" class="nav-link hover:text-primary transition-colors">项目作品</a>
+            <a href="contact.html" class="nav-link active hover:text-primary transition-colors">联系我</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden text-xl text-slate-700">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg border-t border-slate-100">
+        <div class="container mx-auto px-4 py-3 flex flex-col gap-3">
+            <a href="../../index.html" class="mobile-nav-link py-2 text-lg">首页</a>
+            <a href="about.html" class="mobile-nav-link py-2 text-lg">关于我</a>
+            <a href="skills.html" class="mobile-nav-link py-2 text-lg">专业技能</a>
+            <a href="projects.html" class="mobile-nav-link py-2 text-lg">项目作品</a>
+            <a href="contact.html" class="mobile-nav-link active py-2 text-lg">联系我</a>
+        </div>
+    </div>
+</header>
+
+<!-- 联系我主体内容 -->
+<section class="pt-24 pb-16 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <h2 class="text-[clamp(1.8rem,3vw,2.2rem)] font-bold text-center mb-4">联系我</h2>
+        <p class="text-slate-500 text-center max-w-2xl mx-auto mb-16">有问题、合作或者交流技术，欢迎随时留言联系我</p>
+
+        <div class="grid contact-grid gap-12">
+            <!-- 左侧：联系方式（已替换为你的真实信息） -->
+            <div class="space-y-8">
+                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm flex items-center gap-5 card-hover">
+                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-1">电子邮箱</h4>
+                        <a href="mailto:example@163.com" class="text-slate-600 hover:text-primary">3478621447@qq.com</a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm flex items-center gap-5 card-hover">
+                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl">
+                        <i class="fa-brands fa-weixin"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-1">微信</h4>
+                        <p class="text-slate-600">brb17874314950</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm flex items-center gap-5 card-hover">
+                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl">
+                        <i class="fa-brands fa-qq"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-1">QQ</h4>
+                        <p class="text-slate-600">3478621447</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm flex items-center gap-5 card-hover">
+                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-1">所在地址</h4>
+                        <p class="text-slate-600">昆明学院 信息工程学院</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：留言表单 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6">在线留言</h3>
+                <form id="contactForm" class="space-y-5">
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-slate-600 mb-2">姓名</label>
+                            <input type="text" class="form-input" placeholder="请输入你的姓名" required>
+                        </div>
+                        <div>
+                            <label class="block text-slate-600 mb-2">联系方式</label>
+                            <input type="text" class="form-input" placeholder="手机/邮箱" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-slate-600 mb-2">留言主题</label>
+                        <input type="text" class="form-input" placeholder="请输入留言主题" required>
+                    </div>
+                    <div>
+                        <label class="block text-slate-600 mb-2">留言内容</label>
+                        <textarea class="form-input h-32 resize-none" placeholder="请输入留言内容..." required></textarea>
+                    </div>
+                    <button type="submit" class="form-btn w-full">提交留言</button>
+                </form>
+
+                <!-- 提交成功提示 -->
+                <div id="formSuccess" class="hidden bg-green-50 text-green-600 p-6 rounded-2xl text-center mt-6">
+                    <i class="fa-solid fa-check-circle text-3xl mb-3"></i>
+                    <p class="text-lg">留言提交成功！我会尽快回复你~</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="py-10 bg-slate-800 text-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <p class="text-slate-300">© 2026 毕瑞波. 保留所有权利.</p>
+            </div>
+            <div class="flex gap-6 text-xl">
+                <a href="https://github.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://weixin.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-weixin"></i>
+                </a>
+                <a href="mailto:example@163.com" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://qzone.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-qq"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+<script src="../../js/form.js"></script>
+</body>
+</html>

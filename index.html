@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毕瑞波 | 信息工程学院 个人主页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="bg-slate-50 text-slate-800 overflow-x-hidden">
+
+<!-- 导航栏 -->
+<header class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+        <a href="index.html" class="text-xl md:text-2xl font-bold text-primary flex items-center gap-2">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>毕瑞波</span>
+        </a>
+        <nav class="hidden md:flex gap-8 text-base md:text-lg">
+            <a href="index.html" class="nav-link active hover:text-primary transition-colors">首页</a>
+            <a href="html/modules/about.html" class="nav-link hover:text-primary transition-colors">关于我</a>
+            <a href="html/modules/skills.html" class="nav-link hover:text-primary transition-colors">专业技能</a>
+            <a href="html/modules/projects.html" class="nav-link hover:text-primary transition-colors">项目作品</a>
+            <a href="html/modules/contact.html" class="nav-link hover:text-primary transition-colors">联系我</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden text-xl text-slate-700">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg border-t border-slate-100">
+        <div class="container mx-auto px-4 py-3 flex flex-col gap-3">
+            <a href="index.html" class="mobile-nav-link active py-2 text-lg">首页</a>
+            <a href="html/modules/about.html" class="mobile-nav-link py-2 text-lg">关于我</a>
+            <a href="html/modules/skills.html" class="mobile-nav-link py-2 text-lg">专业技能</a>
+            <a href="html/modules/projects.html" class="mobile-nav-link py-2 text-lg">项目作品</a>
+            <a href="html/modules/contact.html" class="mobile-nav-link py-2 text-lg">联系我</a>
+        </div>
+    </div>
+</header>
+
+<!-- 首页横幅 -->
+<section class="pt-32 pb-20 bg-gradient-to-br from-primary/5 to-primary/10 relative overflow-hidden">
+    <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-36 h-36 md:w-44 md:h-44 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                <img src="assets/images/avatar.jpg" alt="毕瑞波个人头像" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-[clamp(2rem,5vw,3rem)] font-bold text-slate-800 mb-4">毕瑞波</h1>
+            <p class="text-[clamp(1.1rem,2vw,1.3rem)] text-slate-600 mb-6">
+                信息工程学院 | 大三学生 | 学号：23110941015
+            </p>
+            <p class="text-slate-500 mb-10 max-w-2xl mx-auto">
+                专注于前端开发与信息工程领域，热爱编程与技术创新，追求扎实的技术能力与高效的解决方案
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- 按钮：底色白色、文字黑色 -->
+                <a href="html/modules/projects.html" class="bg-white text-slate-800 border-2 border-primary px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-lg hover:bg-primary/5 transition-all duration-300">
+                    查看我的项目
+                </a>
+                <a href="assets/resume/毕瑞波-个人简历.pdf" download class="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary/5 transition-all duration-300">
+                    <i class="fa-solid fa-download mr-2"></i>下载简历
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 背景装饰 -->
+    <div class="absolute inset-0 opacity-10">
+        <i class="fa-solid fa-code absolute text-9xl top-1/4 left-1/4"></i>
+        <i class="fa-solid fa-laptop-code absolute text-8xl top-1/3 right-1/4"></i>
+        <i class="fa-solid fa-database absolute text-7xl bottom-1/4 left-1/3"></i>
+    </div>
+</section>
+
+<!-- 核心模块入口 -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <h2 class="text-[clamp(1.8rem,3vw,2.2rem)] font-bold text-center mb-12">我的个人空间</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- 关于我入口 -->
+            <a href="html/modules/about.html" class="bg-slate-50 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">关于我</h3>
+                <p class="text-slate-500">了解我的个人经历与成长</p>
+            </a>
+            <!-- 专业技能入口 -->
+            <a href="html/modules/skills.html" class="bg-slate-50 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">专业技能</h3>
+                <p class="text-slate-500">查看我的技术栈与能力水平</p>
+            </a>
+            <!-- 项目作品入口 -->
+            <a href="html/modules/projects.html" class="bg-slate-50 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl">
+                    <i class="fa-solid fa-project-diagram"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">项目作品</h3>
+                <p class="text-slate-500">浏览我的实战项目与详情</p>
+            </a>
+            <!-- 联系我入口 -->
+            <a href="html/modules/contact.html" class="bg-slate-50 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">联系我</h3>
+                <p class="text-slate-500">与我取得联系或留言</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="py-10 bg-slate-800 text-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <p class="text-slate-300">© 2026 毕瑞波. 保留所有权利.</p>
+            </div>
+            <div class="flex gap-6 text-xl">
+                <a href="https://github.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://weixin.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-weixin"></i>
+                </a>
+                <a href="mailto:example@163.com" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://qzone.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-qq"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

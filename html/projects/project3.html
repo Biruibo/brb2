@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园二手交易平台 | 毕瑞波</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- 导航栏 -->
+<header class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+        <a href="../../index.html" class="text-xl md:text-2xl font-bold text-primary flex items-center gap-2">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>毕瑞波</span>
+        </a>
+        <nav class="hidden md:flex gap-8 text-base md:text-lg">
+            <a href="../../index.html" class="nav-link hover:text-primary transition-colors">首页</a>
+            <a href="../modules/about.html" class="nav-link hover:text-primary transition-colors">关于我</a>
+            <a href="../modules/skills.html" class="nav-link hover:text-primary transition-colors">专业技能</a>
+            <a href="../modules/projects.html" class="nav-link active hover:text-primary transition-colors">项目作品</a>
+            <a href="../modules/contact.html" class="nav-link hover:text-primary transition-colors">联系我</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden text-xl text-slate-700">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg border-t border-slate-100">
+        <div class="container mx-auto px-4 py-3 flex flex-col gap-3">
+            <a href="../../index.html" class="mobile-nav-link py-2 text-lg">首页</a>
+            <a href="../modules/about.html" class="mobile-nav-link py-2 text-lg">关于我</a>
+            <a href="../modules/skills.html" class="mobile-nav-link py-2 text-lg">专业技能</a>
+            <a href="../modules/projects.html" class="mobile-nav-link active py-2 text-lg">项目作品</a>
+            <a href="../modules/contact.html" class="mobile-nav-link py-2 text-lg">联系我</a>
+        </div>
+    </div>
+</header>
+
+<!-- 项目详情 -->
+<section class="pt-24 pb-16 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <!-- 返回按钮 -->
+        <a href="../modules/projects.html" class="inline-flex items-center text-slate-600 hover:text-primary mb-8">
+            <i class="fa-solid fa-arrow-left mr-2"></i>
+            返回项目列表
+        </a>
+
+        <!-- 项目封面图（匹配二手交易主题） -->
+        <div class="mb-10 rounded-2xl overflow-hidden shadow-md">
+            <img src="https://picsum.photos/seed/campus-market/1200/600" alt="校园二手交易平台" class="w-full h-auto">
+        </div>
+
+        <!-- 项目基础信息 -->
+        <div class="mb-8">
+            <span class="bg-amber-500/10 text-amber-600 text-xs px-2 py-1 rounded">竞赛项目</span>
+            <h1 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mt-4 mb-4">校园二手交易平台</h1>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-xs bg-slate-100 px-2 py-1 rounded">HTML5</span>
+                <span class="text-xs bg-slate-100 px-2 py-1 rounded">CSS3</span>
+                <span class="text-xs bg-slate-100 px-2 py-1 rounded">JavaScript</span>
+                <span class="text-xs bg-slate-100 px-2 py-1 rounded">Java</span>
+            </div>
+        </div>
+
+        <!-- 项目简介 -->
+        <div class="max-w-3xl mx-auto mb-12">
+            <h2 class="text-xl font-bold mb-4 border-l-4 border-primary pl-4">项目简介</h2>
+            <p class="text-slate-600 leading-relaxed mb-4">
+                本项目是面向在校师生的校园二手物品交易平台，前端采用HTML5+CSS3+JavaScript实现响应式界面，后端基于Java Spring Boot框架开发，数据库使用MySQL。平台支持商品发布、分类搜索、私聊沟通、订单管理、评价体系等完整电商功能，专注解决校园内二手物品流转问题。
+            </p>
+            <p class="text-slate-600 leading-relaxed">
+                项目重点练习了电商系统核心逻辑、用户权限管理、数据校验、前后端交互，最终实现了符合校园场景的轻量化二手交易解决方案，曾获校级学科竞赛三等奖。
+            </p>
+        </div>
+
+        <!-- 项目亮点 -->
+        <div class="max-w-3xl mx-auto mb-12">
+            <h2 class="text-xl font-bold mb-4 border-l-4 border-primary pl-4">项目亮点</h2>
+            <ul class="text-slate-600 space-y-3 list-disc pl-6">
+                <li>校园专属认证机制，仅支持校内邮箱注册，保障交易安全</li>
+                <li>商品按校区、品类分类，精准匹配校园交易场景</li>
+                <li>内置私聊功能，无需跳转第三方，交易沟通更便捷</li>
+                <li>订单状态跟踪（发布-接单-交易-完成），流程清晰可控</li>
+                <li>交易评价体系，建立校园信用机制，减少交易纠纷</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="py-10 bg-slate-800 text-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <p class="text-slate-300">© 2026 毕瑞波. 保留所有权利.</p>
+            </div>
+            <div class="flex gap-6 text-xl">
+                <a href="https://github.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://weixin.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-weixin"></i>
+                </a>
+                <a href="mailto:example@163.com" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://qzone.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-qq"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

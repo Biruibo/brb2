@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专业技能 | 毕瑞波</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- 导航栏 -->
+<header class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+        <a href="../../index.html" class="text-xl md:text-2xl font-bold text-primary flex items-center gap-2">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>毕瑞波</span>
+        </a>
+        <nav class="hidden md:flex gap-8 text-base md:text-lg">
+            <a href="../../index.html" class="nav-link hover:text-primary transition-colors">首页</a>
+            <a href="about.html" class="nav-link hover:text-primary transition-colors">关于我</a>
+            <a href="skills.html" class="nav-link active hover:text-primary transition-colors">专业技能</a>
+            <a href="projects.html" class="nav-link hover:text-primary transition-colors">项目作品</a>
+            <a href="contact.html" class="nav-link hover:text-primary transition-colors">联系我</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden text-xl text-slate-700">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg border-t border-slate-100">
+        <div class="container mx-auto px-4 py-3 flex flex-col gap-3">
+            <a href="../../index.html" class="mobile-nav-link py-2 text-lg">首页</a>
+            <a href="about.html" class="mobile-nav-link py-2 text-lg">关于我</a>
+            <a href="skills.html" class="mobile-nav-link active py-2 text-lg">专业技能</a>
+            <a href="projects.html" class="mobile-nav-link py-2 text-lg">项目作品</a>
+            <a href="contact.html" class="mobile-nav-link py-2 text-lg">联系我</a>
+        </div>
+    </div>
+</header>
+
+<!-- 专业技能内容 -->
+<section id="skills-section" class="pt-24 pb-16 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <h2 class="text-[clamp(1.8rem,3vw,2.2rem)] font-bold text-center mb-4">专业技能</h2>
+        <p class="text-slate-500 text-center max-w-2xl mx-auto mb-16">不断学习，持续提升，掌握扎实的技术能力</p>
+
+        <!-- 技能分类标签 -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="skill-tab active px-6 py-2 rounded-full bg-primary text-white font-medium" data-tab="programming">
+                编程语言
+            </button>
+            <button class="skill-tab px-6 py-2 rounded-full bg-slate-200 text-slate-700 font-medium" data-tab="web">
+                网页开发
+            </button>
+            <button class="skill-tab px-6 py-2 rounded-full bg-slate-200 text-slate-700 font-medium" data-tab="tools">
+                开发工具
+            </button>
+            <button class="skill-tab px-6 py-2 rounded-full bg-slate-200 text-slate-700 font-medium" data-tab="other">
+                其他技能
+            </button>
+        </div>
+
+        <!-- 编程语言技能 -->
+        <div class="skill-content active" id="programming">
+            <div class="grid skills-grid gap-8">
+                <!-- HTML5 -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">HTML5</h3>
+                        <span class="text-slate-500">熟练度：95%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="95%"></div>
+                    </div>
+                    <p class="text-slate-600">熟练掌握HTML5语义化标签，能够构建规范、可维护的页面结构，熟悉HTML5新特性（Canvas、Video等）</p>
+                </div>
+
+                <!-- CSS3 / Tailwind -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">CSS3 / Tailwind</h3>
+                        <span class="text-slate-500">熟练度：90%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="90%"></div>
+                    </div>
+                    <p class="text-slate-600">精通CSS3动画、Flex、Grid布局，能够实现复杂页面样式，熟练使用Tailwind CSS框架快速开发响应式页面</p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">JavaScript</h3>
+                        <span class="text-slate-500">熟练度：85%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="85%"></div>
+                    </div>
+                    <p class="text-slate-600">掌握ES6+语法，能够实现复杂的页面交互和数据处理，熟悉DOM操作、异步编程（Promise、Async/Await）</p>
+                </div>
+
+                <!-- Python -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">Python</h3>
+                        <span class="text-slate-500">熟练度：80%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="80%"></div>
+                    </div>
+                    <p class="text-slate-600">能够使用Python进行数据分析、爬虫开发和简单后端开发，熟悉常用库（Pandas、Requests、Flask）</p>
+                </div>
+
+                <!-- Java -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">Java</h3>
+                        <span class="text-slate-500">熟练度：75%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="75%"></div>
+                    </div>
+                    <p class="text-slate-600">掌握Java基础语法，能够进行面向对象编程，熟悉常用设计模式，能够开发简单的Java应用程序</p>
+                </div>
+
+                <!-- SQL -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">SQL</h3>
+                        <span class="text-slate-500">熟练度：82%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="82%"></div>
+                    </div>
+                    <p class="text-slate-600">熟练使用MySQL数据库，能够编写复杂SQL查询、存储过程和触发器，熟悉数据库设计和优化基础</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 网页开发技能 -->
+        <div class="skill-content hidden" id="web">
+            <div class="grid skills-grid gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">响应式布局</h3>
+                        <span class="text-slate-500">熟练度：93%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="93%"></div>
+                    </div>
+                    <p class="text-slate-600">能够使用媒体查询、Flex、Grid等技术实现适配手机、平板、电脑的响应式页面，确保不同设备上的良好体验</p>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">CSS动画</h3>
+                        <span class="text-slate-500">熟练度：88%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="88%"></div>
+                    </div>
+                    <p class="text-slate-600">能够使用CSS3 Transition、Animation实现流畅的页面动画效果，熟悉动画性能优化技巧</p>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">API接口调用</h3>
+                        <span class="text-slate-500">熟练度：78%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="78%"></div>
+                    </div>
+                    <p class="text-slate-600">熟悉RESTful API设计规范，能够使用JavaScript的Fetch、Axios等工具调用接口，处理异步数据</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 开发工具技能 -->
+        <div class="skill-content hidden" id="tools">
+            <div class="grid skills-grid gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">VSCode</h3>
+                        <span class="text-slate-500">熟练度：92%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="92%"></div>
+                    </div>
+                    <p class="text-slate-600">熟练使用VSCode及其插件进行高效开发，熟悉自定义配置、代码片段、调试功能等</p>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">Git</h3>
+                        <span class="text-slate-500">熟练度：85%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="85%"></div>
+                    </div>
+                    <p class="text-slate-600">熟练使用Git进行版本控制，熟悉常用命令（commit、branch、merge、rebase等），能够协作开发</p>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">Figma</h3>
+                        <span class="text-slate-500">熟练度：75%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="75%"></div>
+                    </div>
+                    <p class="text-slate-600">能够使用Figma进行简单的UI设计、原型制作，熟悉设计规范，能够将设计稿还原为代码</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 其他技能 -->
+        <div class="skill-content hidden" id="other">
+            <div class="grid skills-grid gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">英语能力</h3>
+                        <span class="text-slate-500">熟练度：75%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="80%"></div>
+                    </div>
+                    <p class="text-slate-600">CET-4备考中，基本能够熟练阅读英文技术文档、官方手册，具备基本的英文交流能力</p>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">团队协作</h3>
+                        <span class="text-slate-500">熟练度：90%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="90%"></div>
+                    </div>
+                    <p class="text-slate-600">具备良好的沟通能力和团队协作精神，能够在项目中与他人高效配合，共同完成任务</p>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">学习能力</h3>
+                        <span class="text-slate-500">熟练度：95%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-2 mb-4">
+                        <div class="skill-bar" data-width="95%"></div>
+                    </div>
+                    <p class="text-slate-600">具备快速学习新技术的能力，能够通过官方文档、技术博客、视频教程等渠道自主学习</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="py-10 bg-slate-800 text-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <p class="text-slate-300">© 2026 毕瑞波. 保留所有权利.</p>
+            </div>
+            <div class="flex gap-6 text-xl">
+                <a href="https://github.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://weixin.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-weixin"></i>
+                </a>
+                <a href="mailto:example@163.com" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://qzone.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-qq"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

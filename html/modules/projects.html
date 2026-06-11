@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目作品 | 毕瑞波</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- 导航栏 -->
+<header class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+        <a href="../../index.html" class="text-xl md:text-2xl font-bold text-primary flex items-center gap-2">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>毕瑞波</span>
+        </a>
+        <nav class="hidden md:flex gap-8 text-base md:text-lg">
+            <a href="../../index.html" class="nav-link hover:text-primary transition-colors">首页</a>
+            <a href="about.html" class="nav-link hover:text-primary transition-colors">关于我</a>
+            <a href="skills.html" class="nav-link hover:text-primary transition-colors">专业技能</a>
+            <a href="projects.html" class="nav-link active hover:text-primary transition-colors">项目作品</a>
+            <a href="contact.html" class="nav-link hover:text-primary transition-colors">联系我</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden text-xl text-slate-700">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg border-t border-slate-100">
+        <div class="container mx-auto px-4 py-3 flex flex-col gap-3">
+            <a href="../../index.html" class="mobile-nav-link py-2 text-lg">首页</a>
+            <a href="about.html" class="mobile-nav-link py-2 text-lg">关于我</a>
+            <a href="skills.html" class="mobile-nav-link py-2 text-lg">专业技能</a>
+            <a href="projects.html" class="mobile-nav-link active py-2 text-lg">项目作品</a>
+            <a href="contact.html" class="mobile-nav-link py-2 text-lg">联系我</a>
+        </div>
+    </div>
+</header>
+
+<!-- 项目列表 -->
+<section class="pt-24 pb-16 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <h2 class="text-[clamp(1.8rem,3vw,2.2rem)] font-bold text-center mb-4">我的项目作品</h2>
+        <p class="text-slate-500 text-center max-w-2xl mx-auto mb-16">实战项目展示，涵盖前端开发、全栈项目等</p>
+
+        <div class="grid projects-grid gap-8">
+            <!-- 项目1：企业官网（商务/科技感配图） -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group">
+                <div class="h-56 overflow-hidden">
+                    <img src="https://picsum.photos/seed/business-website/800/500" alt="企业官网" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold">企业官网设计与实现</h3>
+                        <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">课程设计</span>
+                    </div>
+                    <p class="text-slate-600 mb-4">响应式企业展示官网，适配多设备，包含首页轮播、产品展示、联系表单等完整模块。</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">HTML5</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">CSS3</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">JavaScript</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">Tailwind CSS</span>
+                    </div>
+                    <a href="../projects/project1.html" class="text-primary font-medium hover:underline">查看详情 →</a>
+                </div>
+            </div>
+
+            <!-- 项目2：个人技术博客（代码/简约风配图） -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group">
+                <div class="h-56 overflow-hidden">
+                    <img src="https://picsum.photos/seed/tech-blog/800/500" alt="个人技术博客" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold">个人技术博客系统</h3>
+                        <span class="bg-slate-600/10 text-slate-700 text-xs px-2 py-1 rounded">个人项目</span>
+                    </div>
+                    <p class="text-slate-600 mb-4">前后端分离博客系统，支持文章发布、分类管理、评论互动、搜索功能，界面简洁清新。</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">Tailwind</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">JavaScript</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">Python</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">MySQL</span>
+                    </div>
+                    <a href="../projects/project2.html" class="text-primary font-medium hover:underline">查看详情 →</a>
+                </div>
+            </div>
+
+            <!-- 项目3：校园二手交易平台（校园/交易风配图） -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group">
+                <div class="h-56 overflow-hidden">
+                    <img src="https://picsum.photos/seed/campus-market/800/500" alt="校园二手交易平台" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold">校园二手交易平台</h3>
+                        <span class="bg-amber-500/10 text-amber-600 text-xs px-2 py-1 rounded">竞赛项目</span>
+                    </div>
+                    <p class="text-slate-600 mb-4">面向在校师生的二手物品交易平台，支持商品发布、搜索、私聊、订单管理等完整电商功能。</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">HTML5</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">CSS3</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">JavaScript</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded">Java</span>
+                    </div>
+                    <a href="../projects/project3.html" class="text-primary font-medium hover:underline">查看详情 →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="py-10 bg-slate-800 text-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <p class="text-slate-300">© 2026 毕瑞波. 保留所有权利.</p>
+            </div>
+            <div class="flex gap-6 text-xl">
+                <a href="https://github.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://weixin.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-weixin"></i>
+                </a>
+                <a href="mailto:example@163.com" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://qzone.qq.com/" target="_blank" class="text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-qq"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>
